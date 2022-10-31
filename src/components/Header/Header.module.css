@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
+.mainContainer {
+  display: flex;
+  flex-direction: row;
+  padding: 2vh 10vw;
+  flex-wrap: wrap;
+  height: auto;
+  background: #ffffff;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 0px 0px 15px 15px;
+}
+.title {
+  font-family: Nunito Sans, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 40px;
+  color: #6379f4;
+}
+.tabContainer {
+  display: flex;
+  flex-direction: row;
+  row-gap: 10px;
+  column-gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.image {
+  width: 35px;
+  height: 35px;
+  border-radius: 10px;
+}
+.profileContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  row-gap: 0px;
+}
+.name {
+  font-family: Nunito Sans, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #3a3d42;
+}
+.phone {
+  font-family: Nunito Sans, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: rgba(58, 61, 66, 0.9);
+}
+.bell {
+  font-size: 25px;
+}

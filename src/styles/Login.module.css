@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  height: auto;
+  padding: 10vh 10vw 0vh 5vw;
+}
+.text {
+  font-family: Nunito Sans, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  color: #3a3d42;
+}
+.subtext {
+  font-family: Nunito Sans, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: rgba(58, 61, 66, 0.6);
+}
+.inputContainer {
+  color: rgba(169, 169, 169, 0.6);
+  font-family: Nunito Sans, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 23px;
+  color: rgba(169, 169, 169, 0.8);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 25px;
+  border-bottom: 1.5px solid rgba(169, 169, 169, 0.6);
+}
+.input {
+  color: rgba(169, 169, 169, 0.6);
+  font-family: Nunito Sans, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: rgba(0, 0, 0, 0.8);
+  border: none;
+  background-color: transparent;
+  padding: 10px;
+  width: 100%;
+}
+.input:focus {
+  outline: none;
+}
+.error {
+  text-align: center;
+  color: red;
+  margin-top: 10px;
+}
+.forgot {
+  font-family: Nunito Sans, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: right;
+  color: rgba(58, 61, 66, 0.8);
+  margin-top: 10px;
+  cursor: pointer;
+}
+.button {
+  font-family: Nunito Sans, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #88888f;
+  background: #dadada;
+  box-shadow: 0px 6px 75px rgba(100, 87, 87, 0.05);
+  border-radius: 12px;
+  padding: 10px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+.buttonActive {
+  font-family: Nunito Sans, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #ffffff;
+  padding: 10px;
+  margin-top: 25px;
+  cursor: pointer;
+  background: #6379f4;
+  box-shadow: 0px 6px 75px rgba(100, 87, 87, 0.05);
+  border-radius: 12px;
+}
+.buttonActive:active {
+  background: #3e56db;
+}
+.signupContainer {
+  font-family: Nunito Sans, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.8);
+  margin-top: 30px;
+}
+.signupButton {
+  color: rgba(5, 74, 192, 0.8);
+  cursor: pointer;
+  font-weight: 600;
+}

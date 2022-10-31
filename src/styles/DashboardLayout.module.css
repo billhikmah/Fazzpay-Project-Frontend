@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
+.container {
+  background: #fafcff;
+}
+.mainContainer {
+  display: flex;
+  flex-direction: row;
+  row-gap: 20px;
+  /* column-gap: 20px; */
+  padding: 5vh 10vw;
+  margin: 0;
+}
+.leftContainer {
+  height: auto;
+}
+.rightContainer {
+  min-height: 70vh;
+}

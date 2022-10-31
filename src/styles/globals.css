@@ -21,6 +21,6 @@ a {
   }
   body {
     color: white;
-    background: black;
+    background: rgba(250, 252, 255, 1);
   }
 }

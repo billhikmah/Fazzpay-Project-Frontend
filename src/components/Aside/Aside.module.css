@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space-between;
+  background: #ffffff;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 25px;
+  height: 100%;
+}
+.upperContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px;
+  row-gap: 40px;
+}
+.lowerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 40px;
+  row-gap: 40px;
+}
+.tabContainerActive {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 20px;
+  font-family: Nunito Sans, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 31px;
+  color: #6379f4;
+  cursor: pointer;
+}
+.tabContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 20px;
+  font-family: Nunito Sans, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 31px;
+  color: rgba(58, 61, 66, 0.8);
+  cursor: pointer;
+}
+.tabContainer:active {
+  color: #6379f4;
+}
+.tabLogo {
+  font-size: 28px;
+}

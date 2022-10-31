@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  row-gap: 20px;
+  background: #ffffff;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 25px;
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+}
+.historyContainer {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 25px;
+  padding: 20px;
+  row-gap: 5px;
+}
+.historyTitleContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  /* column-gap: 20px; */
+}
+.transaction {
+  font-family: Nunito Sans, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #3a3d42;
+}
+.seeAllButton {
+  font-family: Nunito Sans, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #6379f4;
+  cursor: pointer;
+}
+.seeAllButton:active {
+  color: #000000;
+}
+.historyItemContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.historyImage {
+  border-radius: 10px;
+  height: 50px;
+  width: 50px;
+}
+.historyProfile {
+  padding: 10px 20px;
+}
+.historyName {
+  font-family: Nunito Sans, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #4d4b57;
+}
+.historyType {
+  font-family: Nunito Sans, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #7a7886;
+}
+.totalIncome {
+  font-family: Nunito Sans, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: right;
+  color: #1ec15f;
+}
+.totalExpense {
+  font-family: Nunito Sans, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: right;
+  color: #ff5b37;
+}

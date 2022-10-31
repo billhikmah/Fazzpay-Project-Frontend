@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 20px;
+}
+.upperContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  row-gap: 10px;
+  background: #6379f4;
+  border-radius: 20px;
+}
+.leftContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+}
+.balance {
+  font-family: Nunito Sans, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 31px;
+  color: #e0e0e0;
+}
+.saldo {
+  font-family: Nunito Sans, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 55px;
+  color: #ffffff;
+}
+.phone {
+  font-family: Nunito Sans, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 19px;
+  color: #dfdcdc;
+}
+.rightContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  row-gap: 10px;
+  padding: 20px;
+}
+.button {
+  font-family: Nunito Sans, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+  padding: 10px;
+  width: 150px;
+  cursor: pointer;
+}
+.button:active {
+  background: rgba(255, 255, 255, 0.308);
+}
+.lowerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  column-gap: 20px;
+  justify-content: space-between;
+  row-gap: 20px;
+  border-radius: 20px;
+}
+.chartContainer {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 25px;
+  padding: 20px;
+}
+.chartUpperContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.chartLowerContainer {
+  width: 100%;
+  text-align: center;
+}
+.chart {
+  width: 55%;
+  height: auto;
+  object-fit: fill;
+}
+.incomeLogo {
+  color: #1ec15f;
+  font-size: 30px;
+}
+.expenseLogo {
+  color: #ff5b37;
+  font-size: 30px;
+}
+.text {
+  font-family: Nunito Sans, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 19px;
+  color: #6a6a6a;
+}
+.number {
+  font-family: Nunito Sans, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  color: #3a3d42;
+}
+.historyContainer {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 25px;
+  padding: 20px;
+  row-gap: 5px;
+}
+.historyTitleContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  /* column-gap: 20px; */
+}
+.transaction {
+  font-family: Nunito Sans, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #3a3d42;
+}
+.seeAllButton {
+  font-family: Nunito Sans, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #6379f4;
+  cursor: pointer;
+}
+.seeAllButton:active {
+  color: #000000;
+}
+.historyItemContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 10px;
+}
+.historyImageContainer {
+  flex: 1;
+}
+.historyImage {
+  border-radius: 10px;
+  height: 50px;
+  width: 50px;
+}
+.historyProfile {
+  flex: 3;
+}
+.historyName {
+  font-family: Nunito Sans, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #4d4b57;
+}
+.historyType {
+  font-family: Nunito Sans, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #7a7886;
+}
+.totalIncome {
+  flex: 2;
+  font-family: Nunito Sans, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: right;
+  color: #1ec15f;
+}
+.totalExpense {
+  flex: 2;
+  font-family: Nunito Sans, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: right;
+  color: #ff5b37;
+}
