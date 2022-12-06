@@ -20,7 +20,39 @@ export const logoutAction = () => ({
   payload: axios.delete(`/api/auth`),
 });
 
-export const getHistory = () => ({
+export const getHistory = (page = 1, limit = 5, filter = "WEEK") => ({
   type: "GET_HISTORY",
-  payload: axios.get(`/transaction/history?page=1&limit=100&filter=MONTH`),
+  payload: axios.get(
+    `/transaction/history?page=${page}&limit=${limit}&filter=${filter}`
+  ),
+});
+
+export const updateImage = (formData, id) => ({
+  type: "UPDATE_IMAGE",
+  payload: axios.patch(`/user/image/${id}`, formData),
+});
+
+export const updatePhone = (formData, id) => ({
+  type: "UPDATE_PHONE",
+  payload: axios.patch(`/user/profile/${id}`, formData),
+});
+
+export const updatePassword = (formData, id) => ({
+  type: "UPDATE_PASSWORD",
+  payload: axios.patch(`/user/password/${id}`, formData),
+});
+
+export const checkPin = (pin) => ({
+  type: "CHECK_PIN",
+  payload: axios.get(`/user/pin/${pin}`),
+});
+
+export const updatePin = (formData, id) => ({
+  type: "UPDATE_PIN",
+  payload: axios.patch(`/user/pin/${id}`, formData),
+});
+
+export const deleteImage = (id) => ({
+  type: "DELETE_IMAGE",
+  payload: axios.delete(`/user/image/${id}`),
 });
