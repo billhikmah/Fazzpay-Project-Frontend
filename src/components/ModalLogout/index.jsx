@@ -9,7 +9,6 @@ import Cookies from "js-cookie";
 function ModalLogout(props) {
   const [isLoading, setIsLoading] = useState(false);
   const router = useRouter();
-  console.log(props);
 
   const logoutHandler = async () => {
     try {
