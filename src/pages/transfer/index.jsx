@@ -9,23 +9,47 @@ import axios from "src/utility/axiosClient";
 function Transfer() {
   const [key, setKey] = useState("");
   const [users, setUsers] = useState([]);
+  const [page, setPage] = useState(1);
+  const [totalPage, setTotalPage] = useState(1);
+  const [searchStatus, setSearchStatus] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     if (key === "") {
-      return setUsers([]);
+      setSearchStatus(false);
+      setUsers([]);
+      return;
     }
     getUsersData();
-  }, [key]);
+  }, [key, page]);
+
+  const prevHandler = (e) => {
+    if (page === 1) {
+      return;
+    }
+    setPage(page - 1);
+  };
+  const nextHandler = (e) => {
+    if (page === totalPage) {
+      return;
+    }
+    setPage(page + 1);
+  };
 
   const getUsersData = async () => {
     try {
       setIsLoading(true);
       const result = await axios.get(
-        `/user?page=1&limit=50&search=${key}&sort=firstName ASC`
+        `/user?page=${page}&limit=4&search=${key}&sort=firstName ASC`
       );
       setUsers(result.data.data);
+      setTotalPage(result.data.pagination.totalPage);
       setIsLoading(false);
+      if (result.data.data.length === 0) {
+        setSearchStatus(false);
+        return;
+      }
+      setSearchStatus(true);
     } catch (error) {
       setUsers([]);
       setIsLoading(false);
@@ -84,6 +108,18 @@ function Transfer() {
               );
             })
           : ""}
+
+        <div className={searchStatus ? styles.pagination : styles.none}>
+          <div className={styles.paginationButton} onClick={prevHandler}>
+            prev
+          </div>
+          <div>
+            {page}/{totalPage}
+          </div>
+          <div className={styles.paginationButton} onClick={nextHandler}>
+            next
+          </div>
+        </div>
       </div>
     </Layout>
   );
