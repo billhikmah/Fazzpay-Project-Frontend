@@ -45,6 +45,11 @@
   line-height: 19px;
   color: #6379f4;
   cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+.seeAllButton:focus {
+  outline: none;
 }
 .seeAllButton:active {
   color: #000000;
@@ -96,4 +101,23 @@
   line-height: 22px;
   text-align: right;
   color: #ff5b37;
+}
+.pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+  color: #6379f4;
+}
+.paginationButton {
+  width: 80px;
+  padding: 10px;
+  border: 1px solid #6379f4;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+.paginationButton:active {
+  border: 1px solid #4d4b57;
 }
