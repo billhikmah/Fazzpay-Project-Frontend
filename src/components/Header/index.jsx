@@ -51,7 +51,7 @@ function Header() {
             className={styles.name}
           >{`${data.firstName} ${data.lastName}`}</div>
           <div className={styles.phone}>
-            {data.noTelp ? data.noTelp : <div>&nbsp;</div>}
+            {data.noTelp ? <div>+62 {data.noTelp}</div> : <div>&nbsp;</div>}
           </div>
         </div>
         <div className={styles.bell}>
