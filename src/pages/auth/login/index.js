@@ -25,11 +25,12 @@ function Login() {
       setIsLoading(true);
       const result = await dispatch(signinAction(form));
       Cookies.set("token", result.action.payload.data.data.token);
-      setIsLoading(false);
       if (result.action.payload.data.data.pin) {
-        return router.push("/home");
+        router.push("/home");
+        return;
       }
       router.push("/pin/update");
+      setIsLoading(false);
     } catch (error) {
       if (error.response.data.msg === "Email / Account not registed") {
         setErrorMessage("Email or password is incorrect");
